@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERT IST | Software Engineering Research & Training Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+
+    /* Header */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: #0a74da; position: sticky; top: 0; z-index: 100; }
+    header img { height: 60px; }
+    nav a { color: #fff; text-decoration: none; margin-left: 25px; font-weight: 600; transition: 0.3s; }
+    nav a:hover { color: #ffdd57; }
+
+    /* Hero Section */
+    .hero { background: url('cover2.png') no-repeat center center/cover; height: 400px; display: flex; justify-content: center; align-items: center; text-align: center; position: relative; }
+    .hero::after { content: ""; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); }
+    .hero h1 { position: relative; color: #fff; font-size: 3em; font-weight: 700; max-width: 90%; }
+    .hero p { position: relative; color: #fff; margin-top: 15px; font-size: 1.2em; }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+    section h2 { color: #0a74da; margin-bottom: 25px; font-size: 2em; text-align: center; }
+
+    /* About */
+    .about p { max-width: 800px; margin: 0 auto; font-size: 1.1em; text-align: center; }
+
+    /* Cards for Services/Expertise */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+    .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+    .card h3 { margin-bottom: 15px; color: #0a74da; font-size: 1.3em; }
+    .card p { font-size: 1em; color: #555; }
+
+    /* Contact */
+    .contact { display: flex; flex-direction: column; align-items: center; gap: 15px; text-align: center; }
+    .contact div { display: flex; align-items: center; gap: 10px; font-size: 1.1em; }
+    .contact svg { fill: #0a74da; width: 24px; height: 24px; }
+    .contact-name { font-weight: 700; margin-top: 10px; color: #0a74da; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background-color: #f2f2f2; font-size: 0.9em; color: #555; }
+
+    /* Responsive */
+    @media(max-width: 768px){ .hero h1 { font-size: 2em; } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo1.png" alt="SERT IST Logo">
+    <p>SERT IST | Software Engineering Research & Training Institute </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <!--<h1>SERT IST</h1>
+      <p>Software Engineering Research & Training Institute</p>
+      -->
+    </div>
+  </div>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+     
+    <h2>About Us</h2>
+    <p>At SERT IST, we empower learners with cutting-edge skills in Software Engineering, Artificial Intelligence, Robotics, Mechanical Engineering, Physics, and STEM disciplines. <br>
+
+Our mission is to bridge the gap between theory and practice, preparing students, professionals, and enthusiasts for the demands of the rapidly evolving tech world.<br>
+
+Through hands-on labs, research-driven projects, and industry-aligned training programs, we cultivate innovation, problem-solving, and technical excellence. Whether you aim to build AI systems, develop software solutions, design robotics, or explore advanced physics, SERT IST is your launchpad for a successful career in technology.<br><br>
+
+Our Vision: To be a leading global hub for technology education, research, and innovation.<br>
+
+Our Mission: Equip learners with real-world skills, foster creativity, and drive the future of tech.<br><br>
+
+Join us on a journey to learn, innovate, and engineer the future.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Software Engineering Courses</h3>
+        <p>Industry-oriented courses covering software development, full-stack engineering, and project-based learning.</p>
+      </div>
+      <div class="card">
+        <h3>AI & Machine Learning</h3>
+        <p>Hands-on training in Artificial Intelligence, Machine Learning, and Data Science for students and professionals.</p>
+      </div>
+      <div class="card">
+        <h3>Robotics & Automation</h3>
+        <p>Workshops and labs for robotics, automation, and IoT solutions with practical projects.</p>
+      </div>
+      <div class="card">
+        <h3>STEM Research</h3>
+        <p>Guidance for research projects in Mechanical, Physics, and STEM disciplines with mentorship support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise">
+    <h2>Our Expertise</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Software Development</h3>
+        <p>Full-stack software engineering, algorithms, data structures, and project implementation.</p>
+      </div>
+      <div class="card">
+        <h3>AI & Data Science</h3>
+        <p>Machine Learning, Deep Learning, NLP, and AI-driven applications for research and industry.</p>
+      </div>
+      <div class="card">
+        <h3>Robotics & Embedded Systems</h3>
+        <p>Design, programming, and automation of robots, IoT systems, and embedded devices.</p>
+      </div>
+      <div class="card">
+        <h3>STEM Education</h3>
+        <p>Hands-on STEM learning, lab experiments, and guidance for projects in physics and engineering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Talk to us</h2>
+    <div class="contact">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13.065L.001 4.5V20h24V4.5l-12 8.565zM12 10L24 1.5H0L12 10z"/></svg>
+        <a href="mailto:contact-sert@proton.me">contact-sert@proton.me</a>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C10.29 21 3 13.71 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.43 2.8z"/></svg>
+        <a href="tel:+911234567890">+91 8608690640</a>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.627-5.373-12-12-12zm0 2c5.522 0 10 4.478 10 10 0 5.523-4.478 10-10 10S2 17.523 2 12C2 6.478 6.478 2 12 2zm-1 3v2H9v2h2v2h2v-2h2V7h-2V5h-2z"/></svg>
+        <a href="https://sertist.org" target="_blank">www.sertist.org</a>
+      </div>
+      <div class="contact-name">
+        SERT IST | Software Engineering Research & Training Institute
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 SERT IST. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
